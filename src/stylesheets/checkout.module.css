@@ -1,0 +1,129 @@
+
+.modalContainer{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalWrapper{
+    width: 50vw;
+    height: 40vh;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.modalWrapper h5{
+    text-align: center;
+}
+.modalOverlay{
+    background-color: rgba(0, 0, 0, 0.397);
+    width: 100%;
+    height: 100%;
+}
+
+/* dkkd */
+
+.text_center{
+	/* color:#fff;	 */
+	text-transform:uppercase;
+    font-size: 23px;
+    margin: -50px 0 80px 0;
+    display: block;
+    text-align: center;
+}
+.box{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+    background-color: rgba(255, 255, 255, 0.89);
+	border-radius:3px;
+	padding:70px 100px;
+}
+.input_container{
+	position:relative;
+	margin-bottom:25px;
+}
+.input_container label{
+	position:absolute;
+	top:0px;
+	left:0px;
+	font-size:16px;
+	/* color:#fff;	 */
+    pointer-event:none;
+	transition: all 0.5s ease-in-out;
+}
+.input_container input{ 
+  border:0;
+  border-bottom:1px solid #555;  
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  /* color:#fff; */
+}
+.input_container input:focus{ 
+ border:none;	
+ outline:none;
+ /* border-bottom:2px solid #e74c3c;	 */
+}
+.btn{
+	color:#fff;
+	background-color:#e74c3c;
+	outline: none;
+    border: 0;
+    color: #fff;
+	padding:10px 20px;
+	text-transform:uppercase;
+	margin-top:50px;
+	border-radius:2px;
+	cursor:pointer;
+	position:relative;
+}
+/*.btn:after{
+	content:"";
+	position:absolute;
+	background:rgba(0,0,0,0.50);
+	top:0;
+	right:0;
+	width:100%;
+	height:100%;
+}*/
+.input_container .input:focus ~ .label,
+.input_container .input:valid ~ .label{
+	top:-12px;
+	font-size:12px;
+	
+}
+
+/* ksks */
+@media (max-width:760px) {
+    .modalWrapper{
+        width: 70vw;
+        height: 60vh;
+        background-color: white;
+        padding: 10px;
+    
+    }
+    .box{
+        width: 90vw;
+        padding: 10px;
+        margin: 0;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+    }
+    .box .form{
+        width: 90%;
+        
+    }
+    
+    
+}
